@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soal Paket 1 | PWAmath 0.1 beta</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWAth</title>
+    <meta name="codelab" content="your-first-pwa-v3">
+    <link rel="stylesheet" type="text/css" href="/styles/inline.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+    <!-- CODELAB: Add link rel manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWAmath">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+    <!-- CODELAB: Add description here -->
+    <meta name="description" content="A simple mathematics quiz app">
+    <!-- CODELAB: Add meta theme-color -->
+    <meta name="theme-color" content="#2F3BA2" />
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/scripts/script1.js" defer></script>
+    <script>
+    MathJax = {
+      loader: {
+        load: ['input/asciimath', 'output/chtml']
+      },
+      asciimath: {
+        delimiters: [['#','#'], ['`','`']]
+      }
+    }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+    </script>
+  </head>  
+  <body>
+    
+    <header class="header">
+      <h1 id="curquestion">
+      
+      </h1>
+      <button id="butHome" aria-label="Home" onclick="goHome()"></button>
+    </header>
+    
+    <script>
+      function goHome() {
+        location.replace("/")
+      }
+    </script>
+    
+    <main class="main">
+      
+      <div class="quiz-container">
+        <div id="quiz"></div>
+      </div>
+      <div style="text-align: center;">
+      <button id="previous" class="foo-button mdc-button mdc-button--raised">
+      <span class="mdc-button__label">Soal Sebelumnya</span>
+    </button>
+    <button id="next" class="foo-button mdc-button mdc-button--raised">
+      <span class="mdc-button__label">Soal Selanjutnya</span>
+    </button>
+    <button id="submit" class="foo-button mdc-button mdc-button--raised">
+      <span class="mdc-button__label">Lihat Hasil</span>
+    </button>
+      <div id="results" class="results"></div>
+      </div>
+    </main>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix 
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>-->
+    
+      <script src="/scripts/app.js"></script>
+      <!-- CODELAB: Add the install script here -->
+      <script>
+        // CODELAB: Register service worker.
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((reg) => {
+                  console.log('Service worker registered.', reg);
+                });
+          });
+        }
+      </script>
+    
+  </body>
+</html>
