@@ -69,5 +69,5 @@ window.addEventListener('appinstalled', logAppInstalled);
  */
 function logAppInstalled(evt) {
   // CODELAB: Add code to log the event
-  console.log('Weather App was installed.', evt);
+  console.log('PWAmath was installed.', evt);
 }

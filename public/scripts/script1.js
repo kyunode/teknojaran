@@ -91,17 +91,17 @@ var resultsDisplayed = 0;
       },
       correctAnswer: "c"
     },
-    //     {
-    //   question: "Tiga puluh data mempunyai rata-rata #p#, jika rata-rata 20% data di antaranya adalah #p + 0,1#; 40% lainnya adalah #p – 0,5#; dan rata-rata  30% data sisanya adalah #p + q#, maka #q =# ....",
-    //   answers: {
-    //     a: "#1/5#",
-    //     b: "#7/30#",
-    //     c: "#4/15#",
-    //     d: "#3/10#",
-    //     e: "#1/3#"
-    //   },
-    //   correctAnswer: "c"
-    // },
+        {
+      question: "Tiga puluh data mempunyai rata-rata #p#, jika rata-rata 20% data di antaranya adalah #p + 0,1#; 40% lainnya adalah #p – 0,5#; dan rata-rata  30% data sisanya adalah #p + q#, maka #q =# ....",
+      answers: {
+        a: "#1/5#",
+        b: "#7/30#",
+        c: "#4/15#",
+        d: "#3/10#",
+        e: "#1/3#"
+      },
+      correctAnswer: "c"
+    },
         {
       question: "<img src='https://cdn.glitch.com/917c8578-7c3c-4e42-b48a-84df6a15face%2Ftest.jpg?v=1572957876100' width=80%></img><br/><br/>Diketahui harga 2 buah buku, 2 buah pulpen dan sebuah spidol adalah Rp14.000,00. Di toko yang sama, harga sebuah buku, sebuah pulpen dan 2 buah spidol adalah Rp13 000,00. Sedangkan harga sebuah buku, 3 buah pulpen dan sebuah spidol adalah Rp15.000,00. Jika Reski ingin membeli sebuah buku, sebuah pulpen dan sebuah spidol, maka berapakah uang yang harus dibayarkan?",
       answers: {

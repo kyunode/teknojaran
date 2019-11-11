@@ -94,6 +94,7 @@ function renderForecast(card, data) {
   const forecastFrom = luxon.DateTime
       .fromSeconds(data.currently.time)
       .setZone(data.timezone)
+      .setLocale('id')
       .toFormat('DDDD t');
   card.querySelector('.date').textContent = forecastFrom;
   card.querySelector('.current .icon')
@@ -124,6 +125,7 @@ function renderForecast(card, data) {
     const forecastFor = luxon.DateTime
         .fromSeconds(forecast.time)
         .setZone(data.timezone)
+        .setLocale('id')
         .toFormat('ccc');
     tile.querySelector('.date').textContent = forecastFor;
     tile.querySelector('.icon').className = `icon ${forecast.icon}`;
@@ -233,9 +235,9 @@ function loadLocationList() {
     }
   }
   if (!locations || Object.keys(locations).length === 0) {
-    const key = '40.7720232,-73.9732319';
+    const key = '-5.207435,119.497591';
     locations = {};
-    locations[key] = {label: 'New York City', geo: '40.7720232,-73.9732319'};
+    locations[key] = {label: 'UIN Alauddin Makassar', geo: '-5.207435,119.497591'};
   }
   return locations;
 }
